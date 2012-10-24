@@ -1,0 +1,13 @@
+formal code design document for jayeh.ca
+----------------------------------------
+
+Principles:
+-Data, Design, and process are all completely seperated.
+-ZERO redundency in code (ie. very modular)
+-All JS is built using libraries
+-everything is extendable
+-general template, and topic template. The topic template is optional.
+
+Specific cues:
+-all links will work without javascript enabled
+-all local page links will evaluate what data the page needs to dynamically update and only pull and update that data, while changing the url.

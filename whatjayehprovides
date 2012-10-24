@@ -1,0 +1,38 @@
+t will jayeh.ca provide... this will almost mimic my sitemap
+-----------
+- About
+	- Internal data
+	- Resume
+	- External profiles
+	- Self-improvement tracking
+		- Long distance running
+		- short distance running
+		- Pushups
+		- Crunchies
+		- (eventually) Japanese
+		- (eventually) Piano
+		- (eventually) drums
+		- (eventually) Karate
+- Blog
+	- by tag
+	- by month
+	- search
+	- comments
+- Projects
+	- Game
+	- Web
+- Reviews
+	- Movies
+	- Television
+	- Music
+	- Electronics
+	- Websites 
+[not in header]
+- updates
+	- by month
+	- search
+- stats
+	- self tracked
+	- google analytics
+- changelog
+- sitemap (this should be automatically generated? Somehow... controller_jayeh?)

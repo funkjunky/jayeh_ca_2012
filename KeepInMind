@@ -1,0 +1,22 @@
+Things to keep in mind to ensure my new website is nothing but pure awesome.
+
+-Use pure.js for templating so I can do all html in PHP.
+-Use jQuery every possible chance.
+-When submitting anything via AJAX, use forms and jQuerys serialize method 
+for forms.
+-during production include all objects of the data that may be used or 
+edited on a webpage. This way I develop very cleanly. Don't worry about over
+head. Burn that bridge when it comes, naturally their should be a way to.
+-Always return from AJAX using JSON objects.
+-all field names should be the same between mySQL, PHP and JS.
+-Every table must have a sortof private _date_created and _date_modified field. The modified field will always be TIMESTAMP type. _Date_Created will have to use a trigger or something to be set when a new insert is done as being the current date.
+-Neither refresh a whole table for updates, nor assume you can add or delete information. Instead varify all information, then update the JS model, then do a psuedo refresh on JS side, which should add or delete the necessary rows.
+-all function calls that take more than one parameter and aren't obvious must have each new parameter on a new line with a comment proceeding it saying what it is. For example with a query:
+runSelect(/* Table: */ "mytable"
+			, /* What: */ array("item1"
+								, item2")
+			, /* Where: */ array("itemwhere" => "thething"));
+-have simple database functions like in the advantage website, but also have optional return types, like numerical or associative, but ALSO have singleRow as a return type that returns a single row, and have singleCol that returns as a single array of that one column type (flattened).
+-Javascript 1.7 and 1.8... look them up on MDC.
+
+EVERYTHING SHOULD COME NATURALLY!

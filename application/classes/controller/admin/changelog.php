@@ -1,0 +1,43 @@
+<?php defined('SYSPATH') or die('No direct script access.');
+
+class Controller_Admin_Changelog extends Controller_Jayeh {
+	public $subtemplate = "changelog/template";
+	public $headertext = "Change Logs";
+
+	public function action_index()
+	{
+		$this->request->redirect('admin/changelog/new');
+	}
+
+	public function action_new()
+	{
+		$changelog = new Model_Changelog();
+		$changelogs = ORM::factory("changelog")->find_all();
+
+		$view = new View("changelog/edit");
+		$view->set("changelog", $changelog);
+		$view->set("changelogs", $changelogs);
+
+		$this->template->set("content", $view);
+	}
+
+	public function action_insert()
+	{
+		$changelog_id = $this->request->param("id");
+		$changelog = new Model_Changelog($changelog_id);
+		$changelog->values($_POST);
+		$changelog->save();
+
+		$this->request->redirect('changelog/new');
+	}
+
+	public function action_delete()
+	{
+		$changelog_id = $this->request->param("id");
+		$changelog = new Model_Changelog($changelog_id);
+		$changelog->delete();
+
+		$this->request->redirect('changelog/new');
+	}
+
+} // End Welcome

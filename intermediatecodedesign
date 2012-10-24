@@ -1,0 +1,7 @@
+systems:
+
+server-side: PHP and Kohana
+client-side: jQuery and JS
+templating: pure.js
+Styling: LESS css
+database: mySQL

@@ -1,0 +1,124 @@
+TODO
+----
+
+-Do the Projects controller
+-Do the Reviews controller
+-Do the stats controller
+	-ensure the blog controller updates the stats controller
+-Add to the template, so it at least links to the basic controllers we can access in a decently nice way.
+-Do the Sitemap controller
+-Add content
+	-fill out data for about page!
+	-add at least one review and at least one project [perhaps jayeh.ca?]
+	-Improve the welcome controller to host information from all parts of the website.
+		-add a twitter feed somewhere.
+-Add colours and a little design to the website on the entire front-end
+	-use LESS css
+	-improve design
+	-ensure we have a design that works on ipad and iphone, and then any smart phone [ie. my optimus], also ensure things work for retina displays.
+	-ensure we have themes set up to be easily changable.
+	-add coloured themes.
+-Reconsider a lot of our design... streamline as much as possible
+	-have a view for a single blog entry and use that in blog/view.php
+	-the index action for all controllers should simply be a redirection to another action.
+	-we should have a controller that has all the default built-in actions:
+		-new, edit, post, delete
+		-simply have a member var set that specifies what the model is.
+	-the post methods should be put into a reused function. I think we should put this method in controller_jayeh.
+-Add ajax to the website
+-Add css 3d header
+
+---
+Things I've relaxed on and should eventually fix
+---
+-adding css and js by view
+-adding tags uses too many lines
+
+DONE:
+
+* August 28th, 2012 *
+-Try using Kohana to see if I want to use it for my personal website.(yes i will use it)
+
+* August 29th, 2012 *
+-play with css3d to appraise feasability.
+
+* August 30th, 2012 *
+-configure Kohana
+	-set all configuration settings properly.
+	-ensure we have a jayeh database and that it is clear.
+	-create a proper mySQL web user with correct permissions. Remember it has to be from localhost
+-Write changelog controller
+	-SQL
+	-write controller with insert, delete, view
+	-write view
+-Write out two teir template controllers for website
+	-write the view for the topleveltemplate.php set in controller_jayeh->template, all display controllers should extend jayeh.
+	-change the controller extension for changelog to Controller_Jayeh
+-Do the home controller
+	-write out the view for the home page, although I suppose everything will be blank and their will be no data filled in yet.
+-Do the about controller
+	-write the controller for about
+	-write the SQL for internal data
+	-write models for all tables
+	-create the about_internal controller
+	-add the create, edit, post, and delete actions to controller
+	-write the form for internal data
+	-write the display for internal data
+	-improve the form for internal data to show current data and allow edit.
+	-write SQL for external profiles
+	-create the about_external controller
+	-add the create, edit, post, and delete actions to controller
+	-write the form for external profiles
+	-write the display for external profiles
+	-write the view page for about. (don't forget pdf resume link)
+	-make sure the categorical template is working correctly with about
+	-add sql for improvement controller
+	-Add in about_imrpovement controller
+	-add the create, edit, post, and delete actions
+	-add in the about_imrpovement_updates controller
+	-add the create, post, and delete actions
+
+* September 1st, 2012 *
+-about controller
+	-update changelog
+-Do the Blog controller
+	-add SQL file and import it
+	-Add models
+	-Add actions
+		-new, edit, post, delete, view
+
+* September 2nd, 2012 *
+-Do the Blog controller
+	-added views for new and edit
+		-including tags, autocomplete on tags
+	-write view actions
+		-including by month, by year, by tag, and by search
+
+* September 10th, 2012 *
+	-write the menu for blog
+		-year and date tree with year and months that have entries, highlighted.
+		-list of tags as links
+	-create a new directory for the route: admin
+	-create the admin/blog admin controller for the blog
+	-move all of the blog editing stuff into that controller
+	-move the admin portion of the changelog to the admin controller.
+-Do the comment controller
+	-write the SQL
+	-create the model, including relation to article
+	-add the relation to comments in article
+	-add comment comment/single view
+	-add comment comment/new view
+	-edit article views to show comments and the new form
+	-edit article actions to include data for comments
+	-add comment controller for posting comments
+-Do the updates controller
+	-write the sql for the updates table
+	-write the model for updates
+	-write the controller for updates
+		-all, month, category, updatetype
+	-write the views
+		-single, group
+	-display nicer information, than simply ids. Things should look proper.
+* September 12th, 2012 *
+	-ensure the blog controller updates the update controller
+* September 13th, 2012 *

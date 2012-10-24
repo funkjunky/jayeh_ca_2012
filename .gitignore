@@ -1,0 +1,16 @@
+# vim
+*~
+*.s[^q]?
+
+# os x general
+.DS_STORE
+.AppleDouble
+.LSOverride
+Icon
+
+# thumbnails
+._*
+
+# Files on external disks
+.Spotlight-V100
+.Trashes
