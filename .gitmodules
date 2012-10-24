@@ -1,0 +1,9 @@
+[submodule "modules/useradmin"]
+	path = modules/useradmin
+	url = https://github.com/mixu/useradmin.git
+[submodule "modules/pagination"]
+	path = modules/pagination
+	url = https://github.com/kohana/pagination.git
+[submodule "js/libs/jQuery-Tags-Input"]
+	path = js/libs/jQuery-Tags-Input
+	url = https://github.com/xoxco/jQuery-Tags-Input.git
