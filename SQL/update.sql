@@ -20,7 +20,9 @@ CREATE TABLE IF NOT EXISTS updatetypes (
 );
 
 INSERT IGNORE INTO categories (name, titlecolumn) VALUES
-	("article", "title");
+	(1, "article", "title");
+INSERT IGNORE INTO categories (name, titlecolumn) VALUES
+	(2, "project", "git_project_name");
 
 INSERT IGNORE INTO updatetypes (name) VALUES
 	("new"),

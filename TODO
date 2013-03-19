@@ -2,11 +2,27 @@ TODO
 ----
 
 -Do the Projects controller
+		-make the edit page
+			-with picture uploading
+			-make sure the view will still work without js
+				-simply check to see if the image exists. If it doesn't then grab the file from the file input and create the image!
+					-if the ajax upload fails, then revert and clear file
+					-if the upload succeeds, then move upload input to right
+					and rename the button to "reupload" or something.
+					-also obviously show thumbnail and path
+			-make sure the upload works correctly.
+		-index: grab github data and spit out on screen
+		-edit: add autocomplete based off of github
 -Do the Reviews controller
+	-SQL
 -Do the stats controller
 	-ensure the blog controller updates the stats controller
 -Add to the template, so it at least links to the basic controllers we can access in a decently nice way.
 -Do the Sitemap controller
+-clean up code
+	-no hardcoded strings or numbers [all constants]
+	-no duplicate code.
+	-comments where things are a little complex
 -Add content
 	-fill out data for about page!
 	-add at least one review and at least one project [perhaps jayeh.ca?]

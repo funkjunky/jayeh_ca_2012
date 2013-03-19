@@ -8,8 +8,8 @@ return array
 		'connection'	=> array(
 			'hostname'		=> 'localhost',
 			'database'		=> 'jayeh',
-			'username'		=> 'web',
-			'password'		=> 'http80',
+			'username'		=> 'root',
+			'password'		=> 'root',
 			'persistent'	=> FALSE
 		),
 		'table_prefix'	=> '',
